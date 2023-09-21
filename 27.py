@@ -1,3 +1,4 @@
 
 import streamlit as st
-st.title('app-1-27')
+st.info("App-1")
+st.balloons()
