@@ -1,5 +1,6 @@
 
 import streamlit as st
-if st.button('Hi'):
-    st.success("Hi, how can I help you?")
+if st.button('Learn'):
+    st.success("I really really really love Nur ❤️
+She is my heart!")
     
