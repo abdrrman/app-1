@@ -26,7 +26,7 @@ openai_api_key = st.sidebar.text_input(
     type="password",
 )
 
-st.title('My Psychologist v2')
+st.title('My Psychologist v3')
 #Get message from the user for the chat-based system
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):  
