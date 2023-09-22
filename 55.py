@@ -26,7 +26,7 @@ openai_api_key = st.sidebar.text_input(
     type="password",
 )
 
-st.title('My Math Teacher')
+st.title('My Mathematician')
 #Get message from the user for the chat-based app
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):  
