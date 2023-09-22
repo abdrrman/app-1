@@ -26,7 +26,7 @@ openai_api_key = st.sidebar.text_input(
     type="password",
 )
 
-st.title('Elon Musk Chat')
+st.title('Chat with Elon Musk')
 #Get message from the user for chat-based application
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):  
