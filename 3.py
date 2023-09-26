@@ -33,9 +33,9 @@ if uploaded_file is not None:
     # Create a temporary file to store the uploaded content
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         temp_file.write(uploaded_file.read())
-        st.session_state['resume_files'] = temp_file.name # it shows the file path
+        resume_files = temp_file.name # it shows the file path
 else:
-    st.session_state['resume_files'] = ''
+    resume_files = ''
 #Load the resume files as Document from the file path
 from langchain.document_loaders import UnstructuredPDFLoader
 
@@ -258,9 +258,9 @@ if uploaded_file is not None:
     # Create a temporary file to store the uploaded content
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         temp_file.write(uploaded_file.read())
-        st.session_state['policy_documents'] = temp_file.name # it shows the file path
+        policy_documents = temp_file.name # it shows the file path
 else:
-    st.session_state['policy_documents'] = ''
+    policy_documents = ''
 #Load the policy documents as Document from the file path
 from langchain.document_loaders import TextLoader, WebBaseLoader, OnlinePDFLoader, UnstructuredPDFLoader, UnstructuredPowerPointLoader, UnstructuredCSVLoader, UnstructuredExcelLoader
 
